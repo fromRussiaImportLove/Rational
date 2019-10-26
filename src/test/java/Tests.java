@@ -139,5 +139,24 @@ public class Tests {
 		assertFalse("Wrong True result in less function, when numerators are difference, and denominators are difference", rOne.less(rTwo));
 	}
 
+	@Test
+	public void testTrueLessOrEqualWhenEqual() {
+		Rational rOne = new Rational (1,3);
+		Rational rTwo = new Rational (1,3);
+		assertTrue("Wrong False result in lessOrEqual function, when two Rational is equal", rOne.lessOrEqual(rTwo));
+	}	
 	
+	@Test
+	public void testTrueLessOrEqualWhenLess() {
+		Rational rOne = new Rational (1,3);
+		Rational rTwo = new Rational (2,3);
+		assertTrue("Wrong False result in lessOrEqual function, when one Rational is less", rOne.lessOrEqual(rTwo));
+	}	
+	
+	@Test
+	public void testFalseLessOrEqualWhenMore() {
+		Rational rOne = new Rational (2,3);
+		Rational rTwo = new Rational (1,3);
+		assertFalse("Wrong True result in lessOrEqual function, when one Rational is more", rOne.lessOrEqual(rTwo));
+	}	
 }
