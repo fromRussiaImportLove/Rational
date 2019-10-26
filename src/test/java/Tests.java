@@ -159,4 +159,4 @@ public class Tests {
 		Rational rTwo = new Rational (1,3);
 		assertFalse("Wrong True result in lessOrEqual function, when one Rational is more", rOne.lessOrEqual(rTwo));
 	}	
-}
+} 
