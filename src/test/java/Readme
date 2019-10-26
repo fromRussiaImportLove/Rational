@@ -1,0 +1,15 @@
+Файл Tests.java - содержит оптимальный набор тестов для проверки класса Rational
+Файл Check.java - содержит код для проверки в ручную, чтобы можно было поиграть с классом Rational
+
+при компиляции Tests.java 
+использовались дополнительные параметры:
+-cp .;junit-4.13-beta-3.jar;hamcrest-core-1.3.jar
+для запуска кода соответственно:
+-cp .;junit-4.13-beta-3.jar;hamcrest-core-1.3.jar org.junit.runner.JUnitCore
+
+версия
+java version "13.0.1" 2019-10-15
+Java(TM) SE Runtime Environment (build 13.0.1+9)
+Java HotSpot(TM) 64-Bit Server VM (build 13.0.1+9, mixed mode, sharing)
+
+При тестах есть два фэйла, связанные с ошибкой в функции less в 60 строке.
